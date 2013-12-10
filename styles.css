@@ -1,0 +1,15 @@
+/* CSS BY MOPDOBOPOT */
+
+BODY {
+    margin: 0;
+    padding: 0;
+}
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cecece;
+    background: #fafafa;
+}
+.cell.alive {
+    background: #66aa66;
+}
