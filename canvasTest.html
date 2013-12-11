@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>canvasTest</title>
+    <script src="jquery-2.0.3.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        var $canvas = $('#canvas')[0],
+            context = $canvas.getContext('2d');
+        $canvas.height = 400;
+        $canvas.width = 400;
+        context.fillRect(0, 0, 100, 100);
+    });
+</script>
+<body>
+    <canvas id="canvas">
+        Your browser is pretty bad, download chrome, pls.
+    </canvas>
+</body>
+</html>
