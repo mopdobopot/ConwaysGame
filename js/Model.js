@@ -16,14 +16,18 @@ function Model(w, h) {
     this.alive = [];
 
     this.makeAlive = function(x, y) {
+        var start = new Date();
         if (this.map[x][y] == 1) {
             throw new Error("Cell (" + x + ", " + y + ") already alive");
         }
         this.map[x][y] = 1;
         this.alive.push({x: x, y: y});
+        var end = new Date();
+        console.log("Model.makeAlive: " + (end - start));
     };
 
     this.makeDead = function(x, y) {
+        var start = new Date();
         if (this.map[x][y] == undefined) {
             throw new Error("Cell (" + x + ", " + y + ") already dead");
         }
@@ -36,9 +40,12 @@ function Model(w, h) {
             }
         }
         this.alive = newAlive;
+        var end = new Date();
+        console.log("Model.makeDead: " + (end - start));
     };
 
     this.update = function(diff) {
+        var start = new Date();
         var _thisref = this;
         diff.born.forEach(function(cell) {
             _thisref.alive.push(cell);
@@ -61,5 +68,7 @@ function Model(w, h) {
             }
         });
         this.alive = newAlive;
+        var end = new Date();
+        console.log("Model.update: " + (end - start));
     }
 }

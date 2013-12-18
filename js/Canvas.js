@@ -15,6 +15,7 @@ function Canvas(cellAmountX, cellAmountY, cellSize) {
     context.strokeStyle = "#c0c0c0";
 
     this.drawMap = function(map) {
+        var start = new Date();
         for (var i = 0; i < cellAmountX; i++) {
             for (var j = 0; j < cellAmountY; j++) {
                 if (map[i][j] == 1) {
@@ -25,9 +26,12 @@ function Canvas(cellAmountX, cellAmountY, cellSize) {
                 }
             }
         }
+        var end = new Date();
+        console.log("Canvas.drawMap: " + (end - start));
     };
 
     this.drawDiff = function(diff) {
+        var start = new Date();
         var _thisref = this;
         diff.born.forEach(function(cell) {
             _thisref.drawAlive(cell.x, cell.y);
@@ -35,6 +39,8 @@ function Canvas(cellAmountX, cellAmountY, cellSize) {
         diff.died.forEach(function(cell) {
             _thisref.drawDead(cell.x, cell.y);
         });
+        var end = new Date();
+        console.log("Canvas.drawDiff: " + (end - start));
     };
 
     this.drawAlive = function(i, j) {

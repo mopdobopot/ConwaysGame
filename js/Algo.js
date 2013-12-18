@@ -24,6 +24,10 @@ function Algo() {
             {x: 1 , y: -1}
         ];
 
+    function contains(array, elem) {
+        return array.indexOf(elem) > -1;
+    }
+
     function initStructures(w, h) {
         initNeighborhood(w, h);
         maybeBorn = [];
@@ -65,6 +69,7 @@ function Algo() {
     }
 
     this.calcDiff = function(map, alive) {
+        var start = new Date();
         initStructures(map.length, map[0].length);
         alive.forEach(function(cell) {
             if (cell == undefined) return;
@@ -76,20 +81,22 @@ function Algo() {
                 }
                 else {
                     incNeighborhood(x, y);
-                    if (neighborhood[x][y] == 3) {
+                    if (contains(Config.B, neighborhood[x][y])) {
                         maybeBorn.push({x: x, y: y});
                     }
                 }
             });
-            if (neighborAmount < 2 || neighborAmount > 3) {
+            if (!contains(Config.S, neighborAmount)) {
                 died.push(cell);
             }
         });
         maybeBorn.forEach(function(cell) {
-            if (neighborhood[cell.x][cell.y] == 3) {
+            if (contains(Config.B, neighborhood[cell.x][cell.y])) {
                 born.push(cell);
             }
         });
+        var end = new Date();
+        console.log("Algo.calcDiff: " + (end - start));
         return {born: born, died: died};
     }
 }

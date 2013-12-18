@@ -13,7 +13,7 @@ $(document).bind('contextmenu', function(e) {
 $(document).ready(function() {
 
     var $window = $(window),
-        cellSize = 15,
+        cellSize = Config.cellSize,
         cellAmountX = $window.width() / cellSize | 0,
         cellAmountY = $window.height() / cellSize | 0,
         canvas = new Canvas(cellAmountX, cellAmountY, cellSize),
