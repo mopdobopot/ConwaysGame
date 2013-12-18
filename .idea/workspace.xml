@@ -22,7 +22,7 @@
     <file path="/lalala.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386938169221" ignored="false" />
     <file path="$USER_HOME$/typobopot/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
     <file path="/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
-    <file path="/.gitignore" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387391044362" ignored="false" />
+    <file path="/.gitignore" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387393493266" ignored="false" />
     <file path="/Config.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387392349477" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="52" selection-end="52" vertical-scroll-proportion="0.062653564">
               <folding />
             </state>
           </provider>
@@ -120,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="187" selection-end="187" vertical-scroll-proportion="0.27149877">
+            <state line="17" column="9" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,13 +175,13 @@
         <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/js/lalala.js" />
         <option value="$PROJECT_DIR$/js/App.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/UI.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/Model.js" />
         <option value="$PROJECT_DIR$/js/Algo.js" />
         <option value="$PROJECT_DIR$/js/Canvas.js" />
         <option value="$PROJECT_DIR$/js/Config.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -674,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="31" selection-start="204" selection-end="204" vertical-scroll-proportion="-3.9230769">
@@ -718,7 +711,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="187" selection-end="187" vertical-scroll-proportion="0.27149877">
+        <state line="17" column="9" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="52" selection-end="52" vertical-scroll-proportion="0.062653564">
           <folding />
         </state>
       </provider>
