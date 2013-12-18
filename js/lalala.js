@@ -3,18 +3,17 @@
  */
 $(document).ready(function() {
 
-    // Запрещаем вызов контекстного меню.
-    // Это позволяет выделять клетки обеими кнопками мыши.
+    // Запрещаем вызов контекстного меню
     $(document).bind("contextmenu", function(e) {
         return false;
     });
 
-    /* Рисование */
+    /* Интерфейс */
     var $window = $(window),
-        $canvas = $('#field'),
+        $canvas = $('#canvas'),
         canvas = $canvas[0],
         context = canvas.getContext('2d'),
-        cellSize = 25,
+        cellSize = 15,
         cellAmountX = $window.width() / cellSize | 0,
         cellAmountY = $window.height() / cellSize | 0,
         canvasHeight = cellAmountY * cellSize,
@@ -28,17 +27,6 @@ $(document).ready(function() {
             canvas.height = canvasHeight;
             canvas.width = canvasWidth;
             context.strokeStyle = "#c0c0c0";
-            for (var i = 0; i < cellAmountX; i++) {
-                for (var j = 0; j < cellAmountY; j++) {
-                    context.strokeRect(i * cellSize + 0.5, j * cellSize + 0.5, cellSize, cellSize);
-                }
-            }
-        },
-
-        initMap = function() {
-            for (var i = 0; i < cellAmountX; i++) {
-                map[i] = [cellAmountY];
-            }
         },
 
         initMouseHandler = function() {
@@ -50,15 +38,14 @@ $(document).ready(function() {
                 clickHandler = function(e) {
                     updCoordinates(e);
                     if (map[i][j] == undefined && mouseIsCreatingCells) {
-                        map[i][j] = 1;
-                        fillRect(i, j, "#999");
+                        addAlive(i, j);
+                        drawAlive(i, j);
                     }
                     if (map[i][j] == 1 && !mouseIsCreatingCells) {
-                        map[i][j] = undefined;
-                        fillRect(i, j, "#fff");
+                        removeAlive(i, j);
+                        drawDead(i, j);
                     }
                 };
-
             $canvas.mousedown(function(e) {
                 mouseIsDown = true;
                 updCoordinates(e);
@@ -80,14 +67,44 @@ $(document).ready(function() {
             });
         },
 
+        drawAlive = function(i, j) {
+            fillRect(i, j, "#999");
+        },
+
+        drawDead = function(i, j) {
+            fillRect(i, j, "#fff");
+        },
+
         fillRect = function(i, j, color) {
             context.fillStyle = color;
             context.fillRect(i * cellSize + 0.5, j * cellSize + 0.5, cellSize, cellSize);
             context.strokeRect(i * cellSize + 0.5, j * cellSize + 0.5, cellSize, cellSize);
-        };
+        },
+
+        addAlive = function(x, y) {
+            map[x][y] = 1;
+            oldAlive.push({x: x, y: y});
+        },
+
+        removeAlive = function(x, y) {
+            map[x][y] = undefined;
+            for (var i = 0; i < oldAlive.length; i++) {
+                if (oldAlive[i] != undefined && oldAlive[i].x == x && oldAlive[i].y == y) {
+                    oldAlive[i] = undefined;
+                }
+            }
+        },
+
+        initEnterHandler = function() {
+            $(document).keypress(function(e) {
+                if (e.which == 13) {
+                    redraw();
+                }
+            });
+        },
 
     /* Вычисления */
-    var map = [[]],
+        map = [],
         neighborhood = [[]],
         oldAlive = [],
         newAlive = [],
@@ -102,33 +119,54 @@ $(document).ready(function() {
             {x: 1 , y: -1}
         ],
 
+        initMap = function() {
+            map = [];
+            for (var i = 0; i < cellAmountX; i++) {
+                map[i] = new Array(cellAmountY);
+            }
+        },
+
+        initNeighborhood = function() {
+            neighborhood = [];
+            for (var i = 0; i < cellAmountX; i++) {
+                neighborhood[i] = new Array(cellAmountY);
+            }
+        },
+
         redraw = function() {
             calcWhoIsAlive();
             updateStructures();
-
+            drawMap();
         },
 
         calcWhoIsAlive = function() {
+            var start = new Date();
             var neighborAmount,
                 x, y;
-            neighborhood = [[]];
+            initNeighborhood();
             oldAlive.forEach(function(cell) {
-                neighborAmount = 0;
-                windRose.forEach(function(offset) {
-                    x = cell.x + offset.x;
-                    y = cell.y + offset.y;
-                    if (map[x][y] == 1) {
-                        neighborAmount++;
+                if (cell != undefined) {
+                    neighborAmount = 0;
+                    windRose.forEach(function(offset) {
+                        x = cell.x + offset.x;
+                        y = cell.y + offset.y;
+                        if (map[x][y] == 1) {
+                            neighborAmount++;
+                        }
+                        else {
+                            incNeighborhood(x, y);
+                            if (neighborhood[x][y] == 3) {
+                                newAlive.push({x: x, y: y});
+                            }
+                        }
+                    });
+                    if (neighborAmount > 1 && neighborAmount < 4) {
+                        newAlive.push({x: cell.x, y: cell.y});
                     }
-                    incNeighborhood(x, y);
-                    if (neighborhood[x][y] == 3) {
-                        newAlive.push({x: x, y: y});
-                    }
-                });
-                if (neighborAmount > 1 && neighborAmount < 4) {
-                    newAlive.push({x: cell.x, y: cell.y});
                 }
             });
+            var end = new Date();
+            console.log('calcWhoIsAlive: ' + (end - start));
         },
 
         incNeighborhood = function(x, y) {
@@ -141,12 +179,15 @@ $(document).ready(function() {
         },
 
         updateStructures = function() {
+            var start = new Date();
             updateMap();
             updateAliveArrays();
+            var end = new Date();
+            console.log('updateStructures: ' + (end - start));
         },
 
         updateMap = function() {
-            map = [[]];
+            initMap();
             newAlive.forEach(function(cell) {
                 map[cell.x][cell.y] = 1;
             });
@@ -155,10 +196,27 @@ $(document).ready(function() {
         updateAliveArrays = function() {
             oldAlive = newAlive;
             newAlive = [];
+        },
+
+        drawMap = function() {
+            var start = new Date();
+            for (var i = 0; i < cellAmountX; i++) {
+                for (var j = 0; j < cellAmountY; j++) {
+                    if (map[i][j] == 1) {
+                        drawAlive(i, j);
+                    }
+                    else {
+                        drawDead(i, j);
+                    }
+                }
+            }
+            var end = new Date();
+            console.log('drawMap: ' + (end - start));
         };
 
     /* Тело программы */
     initCanvas();
-    initMap();
     initMouseHandler();
+    initEnterHandler();
+    redraw();
 });
