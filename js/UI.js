@@ -49,12 +49,12 @@ $(document).ready(function() {
         // Левой кнопкой создаём
         if (model.map[i][j] == undefined && e.which == 1) {
             model.makeAlive(i, j);
-            canvas.drawAlive(i, j);
+            canvas.drawAlive({x: i, y: j});
         }
         // Правой кнопкой удаляем
         if (model.map[i][j] == 1 && e.which == 3) {
             model.makeDead(i, j);
-            canvas.drawDead(i, j);
+            canvas.drawDead({x: i, y: j});
         }
     }
 
@@ -69,6 +69,7 @@ $(document).ready(function() {
                 var diff = algo.calcDiff(model.map, model.alive);
                 model.update(diff);
                 canvas.drawDiff(diff);
+                canvas.drawAllAlive(model.alive);
             }
         });
     }

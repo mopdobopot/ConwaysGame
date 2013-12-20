@@ -21,7 +21,7 @@ function Model(w, h) {
             throw new Error("Cell (" + x + ", " + y + ") already alive");
         }
         this.map[x][y] = 1;
-        this.alive.push({x: x, y: y});
+        this.alive.push({x: x, y: y, age: 0});
         var end = new Date();
         console.log("Model.makeAlive: " + (end - start));
     };
@@ -48,6 +48,7 @@ function Model(w, h) {
         var start = new Date();
         var _thisref = this;
         diff.born.forEach(function(cell) {
+            cell.age = 0;
             _thisref.alive.push(cell);
             _thisref.map[cell.x][cell.y] = 1;
         });
@@ -64,6 +65,12 @@ function Model(w, h) {
                 }
             });
             if (!nowDead) {
+                if (aliveCell.age == undefined) {
+                    aliveCell.age = 1;
+                }
+                else {
+                    aliveCell.age++;
+                }
                 newAlive.push(aliveCell);
             }
         });
