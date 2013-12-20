@@ -14,6 +14,7 @@
  */
 
 var Config = {
+    ageColorStep: 10,
     cellSize: 15,
     B: [3],
     S: [2, 3]

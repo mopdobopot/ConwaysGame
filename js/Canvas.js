@@ -8,20 +8,21 @@ function Canvas(cellAmountX, cellAmountY, cellSize) {
     this.$canvas = $('#canvas');
 
     var canvas = this.$canvas[0],
-        context = canvas.getContext('2d');
+        context = canvas.getContext('2d'),
+        ageColorStep = Config.ageColorStep;
 
     canvas.width = cellAmountX * cellSize;
     canvas.height = cellAmountY * cellSize;
     context.strokeStyle = "#c0c0c0";
 
     function getColor(age) {
-        if (age == undefined || age < 10) {
+        if (age == undefined || age < ageColorStep) {
             return "#9c0";
         }
-        else if (age < 20) {
+        else if (age < 2 * ageColorStep) {
             return "#990";
         }
-        else if (age < 30) {
+        else if (age < 3 * ageColorStep) {
             return "#660";
         }
         else {

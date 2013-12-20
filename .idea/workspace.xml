@@ -18,12 +18,12 @@
     <file path="/App.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387092590865" ignored="false" />
     <file path="/Model.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387514758249" ignored="false" />
     <file path="$USER_HOME$/polygonParty/styles.css" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386933585737" ignored="false" />
-    <file path="/Canvas.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517314776" ignored="false" />
+    <file path="/Canvas.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517448387" ignored="false" />
     <file path="/lalala.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386938169221" ignored="false" />
     <file path="$USER_HOME$/typobopot/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
     <file path="/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
-    <file path="/.gitignore" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387393493266" ignored="false" />
-    <file path="/Config.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387392349477" ignored="false" />
+    <file path="/.gitignore" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517637351" ignored="false" />
+    <file path="/Config.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517421682" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="42" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="4" column="9" selection-start="56" selection-end="56" vertical-scroll-proportion="0.083538085">
               <folding />
             </state>
           </provider>
@@ -123,16 +123,16 @@
       <file leaf-file-name="Config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="15" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="16" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Canvas.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Canvas.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Canvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="659" selection-end="659" vertical-scroll-proportion="0.6056511">
+            <state line="24" column="39" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,11 +177,11 @@
         <option value="$PROJECT_DIR$/js/App.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/Algo.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/Model.js" />
         <option value="$PROJECT_DIR$/js/UI.js" />
-        <option value="$PROJECT_DIR$/js/Config.js" />
         <option value="$PROJECT_DIR$/js/Canvas.js" />
+        <option value="$PROJECT_DIR$/js/Config.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -695,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/Algo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="30" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0">
@@ -723,16 +716,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Config.js">
+    <entry file="file://$PROJECT_DIR$/js/Canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="24" column="39" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Canvas.js">
+    <entry file="file://$PROJECT_DIR$/js/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="659" selection-end="659" vertical-scroll-proportion="0.6056511">
+        <state line="16" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="56" selection-end="56" vertical-scroll-proportion="0.083538085">
           <folding />
         </state>
       </provider>
