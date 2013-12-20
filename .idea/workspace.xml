@@ -7,12 +7,12 @@
     <file path="/app.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386868444557" ignored="false" />
     <file path="$USER_HOME$/RussianAICup 2013/java-cgdk/src/main/java/MyStrategy.java" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386692049448" ignored="false" />
     <file path="/MyStrategy.java" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386692042101" ignored="false" />
-    <file path="/index.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387392590763" ignored="false" />
-    <file path="/styles.css" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386933866951" ignored="false" />
+    <file path="/index.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387527265659" ignored="false" />
+    <file path="/styles.css" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387527600532" ignored="false" />
     <file path="/Dummy.txt" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386933819892" ignored="false" />
     <file path="$USER_HOME$/polygonParty/js/App.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386933585737" ignored="false" />
     <file path="/canvasTest.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386773595631" ignored="false" />
-    <file path="/UI.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387516547642" ignored="false" />
+    <file path="/UI.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387526678254" ignored="false" />
     <file path="/CANVAS.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1386870381506" ignored="false" />
     <file path="/Algo.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387392526150" ignored="false" />
     <file path="/App.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387092590865" ignored="false" />
@@ -23,7 +23,7 @@
     <file path="$USER_HOME$/typobopot/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
     <file path="/visualize.html" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387094147312" ignored="false" />
     <file path="/.gitignore" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517637351" ignored="false" />
-    <file path="/Config.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387517421682" ignored="false" />
+    <file path="/Config.js" changelist="9c4ab109-58d6-4bd1-a793-56d92838a33f" time="1387524692319" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,25 +87,18 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="30" selection-start="886" selection-end="886" vertical-scroll-proportion="-13.730769">
+              <folding>
+                <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="9" selection-start="56" selection-end="56" vertical-scroll-proportion="0.083538085">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="270" selection-end="270" vertical-scroll-proportion="0.35503685">
               <folding />
             </state>
           </provider>
@@ -114,7 +107,7 @@
       <file leaf-file-name="UI.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/UI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="40" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.0">
+            <state line="113" column="18" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +116,7 @@
       <file leaf-file-name="Config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+            <state line="8" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,16 +165,16 @@
         <option value="$PROJECT_DIR$/test/UI.js" />
         <option value="$PROJECT_DIR$/test/App.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/js/lalala.js" />
         <option value="$PROJECT_DIR$/js/App.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/Algo.js" />
         <option value="$PROJECT_DIR$/js/Model.js" />
-        <option value="$PROJECT_DIR$/js/UI.js" />
         <option value="$PROJECT_DIR$/js/Canvas.js" />
-        <option value="$PROJECT_DIR$/js/Config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/Config.js" />
+        <option value="$PROJECT_DIR$/js/UI.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles.css" />
       </list>
     </option>
   </component>
@@ -651,7 +644,9 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +660,9 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,23 +678,23 @@
         <state line="3" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.06367041" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/Algo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="30" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="56" selection-end="56" vertical-scroll-proportion="0.083538085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -711,7 +708,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/UI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="40" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.0">
+        <state line="113" column="18" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -723,16 +720,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Config.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="21" column="30" selection-start="886" selection-end="886" vertical-scroll-proportion="-13.730769">
+          <folding>
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="56" selection-end="56" vertical-scroll-proportion="0.083538085">
+        <state line="17" column="13" selection-start="270" selection-end="270" vertical-scroll-proportion="0.35503685">
           <folding />
         </state>
       </provider>

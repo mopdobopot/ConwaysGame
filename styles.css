@@ -5,5 +5,49 @@ BODY {
     padding: 0;
     overflow: hidden;
 }
-CANVAS#canvas {
+#menuWrapper {
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+}
+#menuWrapper #menu {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    padding-top: 10px;
+    background: #E8E8E8;
+    border-radius: 4px 4px 4px 4px;
+}
+#menu {
+    font-size: 20px;
+    opacity: .3;
+    transition: opacity .4s ease;
+    cursor: default;
+}
+#menu i {
+    width: 16px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+#menu:hover {
+    opacity: .7;
+    transition: opacity .4s ease;
+}
+.infoBlock {
+    display: inline-block;
+    font-size: 13px;
+    cursor: default;
+}
+.infoBlock i {
+    cursor: default!important;
+    color: #555;
+}
+#info {
+    display: inline-block;
+}
+#play:active, #pause:active, #nextStep:active {
+    color: #555;
 }

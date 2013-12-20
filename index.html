@@ -3,6 +3,7 @@
 <head>
     <title>«Жизнь»</title>
     <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
     <script src="lib/jquery-2.0.3.min.js"></script>
     <script src="js/Config.js"></script>
     <script src="js/Algo.js"></script>
@@ -11,6 +12,17 @@
     <script src="js/UI.js"></script>
 </head>
 <body>
+    <div id="menuWrapper">
+        <div id="menu">
+            <i id="play" class="fa fa-play" title="Старт (пробел)"></i>
+            <i id="pause" class="fa fa-pause" title="Пауза (пробел)" style="display: none"></i>
+            <i id="nextStep" class="fa fa-step-forward" title="След. поколение (энтер)"></i>
+            <div class="infoBlock">
+                <i class="fa fa-user"></i>
+                <div id="info">0 (0)</div>
+            </div>
+        </div>
+    </div>
     <canvas id="canvas">
         Ваш браузер не поддерживает Canvas
     </canvas>
