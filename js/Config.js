@@ -16,7 +16,7 @@
 var Config = {
     ageColorStep: 10,
     playbackStepDelay: 30,
-    cellSize: 15,
+    cellSize: 4,
     B: [3],
     S: [2, 3]
 };
